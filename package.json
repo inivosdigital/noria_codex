@@ -1,0 +1,23 @@
+{
+  "name": "noria",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@8.15.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter noria-web dev",
+    "dev:api": "uv run --cwd apps/api fastapi dev app/main.py",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "prettier --check ."
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.19.1",
+    "prettier": "^3.2.5",
+    "turbo": "^1.13.3"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "extends": "../../packages/config/typescript/base.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/services/*": ["services/*"],
+      "@/stores/*": ["stores/*"],
+      "@/types/*": ["types/*"],
+      "@shared/*": ["../../packages/shared/src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": ["node_modules"]
+}
