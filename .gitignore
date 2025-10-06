@@ -7,6 +7,7 @@ apps/api/.env.*
 apps/web/.env
 apps/web/.env.*
 .ignore
+.bmad-core
 !**/.env.example
 !apps/api/.env.example
 !apps/web/.env.example
