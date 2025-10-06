@@ -2,12 +2,16 @@
 .env
 *.env
 *.env.*
-!.env.example
 apps/api/.env
 apps/api/.env.*
 apps/web/.env
 apps/web/.env.*
 .ignore
+!**/.env.example
+!apps/api/.env.example
+!apps/web/.env.example
+!**/.env.sample
+!**/.env.template
 
 # IDE & OS cruft
 .vscode/
